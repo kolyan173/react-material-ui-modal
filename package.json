@@ -7,7 +7,9 @@
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0",
-    "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors"
+    "dev": " webpack-dashboard -- webpack-dev-server --progress --profile --colors",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "webpack": "1.14.0",
     "webpack-cleanup-plugin": "^0.4.1",
     "webpack-dashboard": "^0.2.0",
-    "webpack-dev-server": "1.16.2"
+    "webpack-dev-server": "1.16.2",
+    "@kadira/storybook": "^2.21.0"
   }
 }
